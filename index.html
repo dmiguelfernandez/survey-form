@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>SurveyForm</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">
+    Please fill out this form with the required information
+  </p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Enter Your Name:
+        <input id="name" type="text" placeholder="Name" required /></label>
+      <label id="email-label" for="email">Enter Your Email:
+        <input id="email" name="email" type="email" placeholder="Email" required /></label>
+      <label id="number-label" for="number">Age (optional)
+        <input id="number" type="number" min="0" max="10" placeholder="Age" /></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">How did you hear about us?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">News</option>
+          <option value="2">YouTube Channel</option>
+          <option value="3">Social Networks</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      Would you recommend freeCodeCamp to a friend?
+      <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline"
+          value="off" checked />
+        Personal</label>
+      <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline"
+          value="off" />
+        Business</label>
+    </fieldset>
+    <fieldset>
+      What would you like to see improved?
+      <label for="front-end">
+        <input class="inline" id="front-end" type="checkbox" value="front-end" /> Front-end
+        Projects
+      </label>
+      <label for="back-end">
+        <input class="inline" id="back-end" type="checkbox" value="back-end" /> Back-end
+        Projects
+      </label>
+      <label for="data-visualitation">
+        <input class="inline" id="data-visualitation" type="checkbox" value="data-visualitation" />
+        Data Visualization
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="bio">Provide a bio:
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+      </label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+
+</html>
+
+<!--
+Para los campos de entrada de nombre, email y número, puedes ver los correspondientes elementos label en el formulario, que describen el propósito de cada campo con los siguientes id: id="name-label", id="email-label" y id="number-label"
+Para los campos de entrada de nombre, email y número, podrás ver un texto provisional que da una descripción o instrucciones para cada campo
+Dentro del elemento form, debes tener un elemento desplegable select con un id de dropdown con al menos dos opciones para elegir
+Dentro del elemento form, puedes seleccionar una opción de un grupo de al menos dos botones de radio que son agrupado utilizando el atributo name
+Dentro del elemento form, puedes seleccionar varios campos en una serie de casillas de verificación, cada una debe tener un atributo value
+Dentro del elemento form, se te presenta un textarea para comentarios adicionales
+Dentro del elemento form, se te presenta un botón con un id de submit para enviar todas las entradas
+-->
