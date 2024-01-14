@@ -1,5 +1,15 @@
-# [LEARNING PROJECTS] SURVEY FORM
+# Survey Form
 
-Survey Form using only HTML and CSS.
+This project belongs to a group of learning projects that I have done in https://www.freecodecamp.org.
 
-![Descripción de la imagen](/images/picture.jpg)
+
+## Screenshots
+
+![App Screenshot](/images/picture.jpg)
+
+
+## Tech Stack
+
+**Client:** Html and CSS
+
+
